@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="ros_nmea_forwarder" type="nmea_forwarder.py" name="nmea_forwarder" output="screen">
+    <param name="ip_address" value="localhost" />
+    <param name="port" value="27002" />
+    <param name="topic_name" value="/pos/gps_driver/raw_nmea" />
+  </node>
+</launch>
+
